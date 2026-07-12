@@ -33,7 +33,7 @@ const projects = [
       "Matplotlib",
     ],
     image: "/images/traffic.png",
-    github: "https://github.com/ramkrushnkadam",
+    github: "https://github.com/ramkrushnkadam/traffic_prediction_model",
     demo: "#",
   },
 
