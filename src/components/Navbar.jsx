@@ -19,14 +19,16 @@ function Navbar() {
           <li><a href="#projects" className="hover:text-blue-500 transition duration-300">Projects</a></li>
           <li><a href="#contact" className="hover:text-blue-500 transition duration-300">Contact</a></li>
           <li>
-            <a
-              href="/resume.pdf"
-              download
-            
-              className="hover:text-blue-500 transition duration-300"
-            >
-              Resume
-            </a>
+            <li>
+  <a
+    href="/resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-500 transition duration-300"
+  >
+    Resume
+  </a>
+</li>
 
             
           </li>
