@@ -99,7 +99,7 @@ function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-40 object-cover"
+                className="w-full h-60 object-cover"
               />
 
               {/* Content */}
