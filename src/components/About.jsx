@@ -29,7 +29,7 @@ function About() {
           <p className="text-gray-400 mt-5 max-w-3xl mx-auto">
             I am a passionate Information Technology Engineering student
             who enjoys creating innovative software solutions using
-            Python, Java, Android, AI/ML and Full Stack Development.
+            Python, Java, Data Analytics, AI/ML and Full Stack Development.
           </p>
         </motion.div>
 
@@ -54,7 +54,7 @@ function About() {
             </p>
 
             <p className="mt-3 text-blue-400">
-              CGPA : 8.8
+              CGPA : 8.73
             </p>
           </motion.div>
 
@@ -77,7 +77,7 @@ function About() {
             </p>
 
             <p className="text-gray-400">
-              Kotlin
+              React
             </p>
 
             <p className="text-gray-400">
@@ -123,7 +123,7 @@ function About() {
             </h3>
 
             <p className="mt-4 text-gray-400">
-              Android Development
+              Full Stack Development
             </p>
 
             <p className="text-gray-400">
@@ -131,7 +131,7 @@ function About() {
             </p>
 
             <p className="text-gray-400">
-              Full Stack
+              AIML Projects
             </p>
 
             <p className="text-gray-400">
