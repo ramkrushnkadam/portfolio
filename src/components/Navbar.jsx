@@ -22,18 +22,15 @@ function Navbar() {
             <a
               href="/resume.pdf"
               download
+              view
+            
               className="hover:text-blue-500 transition duration-300"
             >
               Resume
+              Resume
             </a>
 
-            <a
-  href="/resume.pdf"
-  target="_blank"
-  rel="noreferrer"
->
-  View Resume
-</a>
+            
           </li>
         </ul>
 
