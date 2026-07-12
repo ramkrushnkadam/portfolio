@@ -33,7 +33,7 @@ function Experience() {
       subtitle: "Information Technology",
       year: "2024 - Present",
       description:
-        "Currently pursuing B.Tech in Information Technology at Sanjivani College of Engineering with a CGPA of 8.8.",
+        "Currently pursuing B.Tech in Information Technology at Sanjivani College of Engineering with a CGPA of 8.73.",
     },
   ];
 

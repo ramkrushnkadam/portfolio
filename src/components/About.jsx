@@ -131,7 +131,7 @@ function About() {
             </p>
 
             <p className="text-gray-400">
-              AIML Projects
+              AIML 
             </p>
 
             <p className="text-gray-400">

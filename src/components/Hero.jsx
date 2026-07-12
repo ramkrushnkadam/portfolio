@@ -54,7 +54,7 @@ function Hero() {
 
           <p className="mt-8 text-lg text-gray-400 leading-8 max-w-xl">
             I am an Information Technology Engineering student passionate
-            about Python, Java, Android Development, Artificial Intelligence,
+            about Python, Java, Artificial Intelligence,
             Machine Learning, IoT, and Full Stack Web Development.
             I enjoy creating innovative software solutions that solve
             real-world problems.

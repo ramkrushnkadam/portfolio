@@ -3,14 +3,12 @@ import { motion } from "framer-motion";
 const skills = [
   { name: "Python", level: 90 },
   { name: "Java", level: 85 },
-  { name: "Kotlin", level: 75 },
   { name: "JavaScript", level: 80 },
   { name: "HTML & CSS", level: 90 },
   { name: "React", level: 75 },
   { name: "MySQL", level: 80 },
   { name: "Firebase", level: 75 },
   { name: "Machine Learning", level: 70 },
-  { name: "Android Development", level: 85 },
 ];
 
 function Skills() {

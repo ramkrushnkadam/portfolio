@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 function Contact() {
   return (
@@ -9,6 +15,7 @@ function Contact() {
     >
       <div className="max-w-6xl mx-auto">
 
+        {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +41,9 @@ function Contact() {
               <FaEnvelope className="text-2xl text-blue-500" />
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-gray-400">ramkrushn57@gmail.com</p>
+                <p className="text-gray-400">
+                  ramkrushn57@gmail.com
+                </p>
               </div>
             </div>
 
@@ -42,7 +51,9 @@ function Contact() {
               <FaPhone className="text-2xl text-blue-500" />
               <div>
                 <h4 className="font-semibold">Phone</h4>
-                <p className="text-gray-400">+91 9322686252</p>
+                <p className="text-gray-400">
+                  +91 9322686252
+                </p>
               </div>
             </div>
 
@@ -50,17 +61,20 @@ function Contact() {
               <FaMapMarkerAlt className="text-2xl text-blue-500" />
               <div>
                 <h4 className="font-semibold">Location</h4>
-                <p className="text-gray-400">Nashik, Maharashtra, India</p>
+                <p className="text-gray-400">
+                  Nashik, Maharashtra, India
+                </p>
               </div>
             </div>
 
-            <div className="flex gap-5 text-3xl pt-4">
+            <div className="flex gap-6 text-3xl pt-6">
+
               <a
                 href="https://github.com/ramkrushnkadam"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub className="hover:text-blue-500 transition" />
+                <FaGithub className="hover:text-blue-500 transition duration-300" />
               </a>
 
               <a
@@ -68,35 +82,58 @@ function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedin className="hover:text-blue-500 transition" />
+                <FaLinkedin className="hover:text-blue-500 transition duration-300" />
               </a>
+
             </div>
 
           </div>
 
-          {/* Right Side */}
-          <form className="space-y-6">
+          {/* Right Side Form */}
+
+          <form
+            action="https://formspree.io/f/mpqvaone"
+            method="POST"
+            className="space-y-6"
+          >
 
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
+              required
               className="w-full p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none"
             />
 
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
+              required
+              className="w-full p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none"
+            />
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
               className="w-full p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none"
             />
 
             <textarea
+              name="message"
               rows="6"
               placeholder="Your Message"
+              required
               className="w-full p-4 rounded-lg bg-slate-800 border border-slate-700 focus:border-blue-500 outline-none"
-            />
+            ></textarea>
+
+            {/* Optional: Disable CAPTCHA */}
+            <input type="hidden" name="_captcha" value="false" />
 
             <button
-              className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg transition"
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-lg font-semibold transition duration-300 hover:scale-105"
             >
               Send Message
             </button>
