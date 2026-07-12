@@ -26,6 +26,14 @@ function Navbar() {
             >
               Resume
             </a>
+
+            <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noreferrer"
+>
+  View Resume
+</a>
           </li>
         </ul>
 
