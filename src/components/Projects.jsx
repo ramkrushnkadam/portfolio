@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 
 const projects = [
   {
@@ -64,6 +67,7 @@ function Projects() {
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
+
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -75,82 +79,112 @@ function Projects() {
             My <span className="text-blue-500">Projects</span>
           </h2>
 
-          <p className="text-gray-400 mt-4 text-lg">
-            Here are some of my featured projects that showcase my skills in
-            Artificial Intelligence, Machine Learning, Web Development, and IoT.
+          <p className="text-gray-400 mt-5 text-lg max-w-3xl mx-auto leading-8">
+            A selection of projects demonstrating my expertise in Artificial
+            Intelligence, Machine Learning, Full Stack Development,
+            Data Analytics, and IoT technologies.
           </p>
         </motion.div>
 
-        {/* Project Cards */}
+        {/* Cards */}
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {projects.map((project, index) => (
+
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ y: -10, scale: 1.03 }}
-              transition={{ duration: 0.5 }}
+              whileHover={{
+                y: -10,
+              }}
+              transition={{ duration: 0.4 }}
               viewport={{ once: true }}
-              className="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-lg"
+              className="group bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.35)] transition-all duration-300"
             >
 
-              {/* Project Image */}
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-70 object-cover"
-              />
+              {/* Image */}
+
+              <div className="overflow-hidden">
+
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+
+              </div>
 
               {/* Content */}
+
               <div className="p-6">
 
                 <h3 className="text-2xl font-bold mb-3">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-400 mb-5 text-sm leading-7">
+                <p className="text-gray-400 text-sm leading-7 mb-6">
                   {project.description}
                 </p>
 
-                {/* Tech Stack */}
+                {/* Tech */}
+
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tech.map((item, i) => (
+
+                  {project.tech.map((tech, i) => (
+
                     <span
                       key={i}
-                      className="bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full text-xs"
+                      className="px-3 py-1 rounded-full bg-blue-600/20 text-blue-400 text-xs"
                     >
-                      {item}
+                      {tech}
                     </span>
+
                   ))}
+
                 </div>
 
                 {/* Buttons */}
-                <div className="flex gap-3">
+
+                <div className="flex justify-between items-center">
 
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition"
+                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-lg transition duration-300"
                   >
                     <FaGithub />
                     GitHub
                   </a>
 
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 border border-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition"
-                  >
-                    <FaExternalLinkAlt />
-                    Demo
-                  </a>
+                  {project.demo === "#" ? (
+
+                    <span className="text-xs bg-yellow-500/20 text-yellow-400 px-3 py-2 rounded-lg">
+                      Coming Soon
+                    </span>
+
+                  ) : (
+
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 border border-blue-500 hover:bg-blue-600 px-5 py-2 rounded-lg transition duration-300"
+                    >
+                      <FaExternalLinkAlt />
+                      Live Demo
+                    </a>
+
+                  )}
 
                 </div>
 
               </div>
 
             </motion.div>
+
           ))}
 
         </div>

@@ -7,10 +7,14 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ParticlesBackground from "./components/ParticlesBackground";
+import AuroraBackground from "./components/AuroraBackground";
 
 function App() {
   return (
     <>
+     <AuroraBackground />
+
       <Navbar />
       <Hero />
       <About />
