@@ -17,7 +17,7 @@ const projects = [
       "JavaScript",
     ],
     image: "/images/smartcampus.png",
-    github: "https://github.com/ramkrushnkadam",
+    github: "https://github.com/ramkrushnkadam/smart-campus",
     demo: "#",
   },
 
