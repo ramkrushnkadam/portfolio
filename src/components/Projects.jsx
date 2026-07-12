@@ -162,7 +162,7 @@ function Projects() {
                   {project.demo === "#" ? (
 
                     <span className="text-xs bg-yellow-500/20 text-yellow-400 px-3 py-2 rounded-lg">
-                      Coming Soon
+                      Demo
                     </span>
 
                   ) : (
