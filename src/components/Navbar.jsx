@@ -38,7 +38,7 @@ function Navbar() {
             target="_blank"
             rel="noreferrer"
             title="GitHub"
-            className="p-3 rounded-full bg-slate-800 hover:bg-blue-600 transition-all duration-300 hover:scale-110"
+            className="p-3 rounded-full bg-slate-800 hover:bg-gray-600 transition-all duration-300 hover:scale-110"
           >
             <FaGithub className="text-xl text-white" />
           </a>
