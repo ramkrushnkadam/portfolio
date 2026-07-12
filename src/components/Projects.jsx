@@ -159,25 +159,7 @@ function Projects() {
                     GitHub
                   </a>
 
-                  {project.demo === "#" ? (
-
-                    <span className="text-xs bg-yellow-500/20 text-yellow-400 px-3 py-2 rounded-lg">
-                      Demo
-                    </span>
-
-                  ) : (
-
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex items-center gap-2 border border-blue-500 hover:bg-blue-600 px-5 py-2 rounded-lg transition duration-300"
-                    >
-                      <FaExternalLinkAlt />
-                      Live Demo
-                    </a>
-
-                  )}
+                  
 
                 </div>
 
